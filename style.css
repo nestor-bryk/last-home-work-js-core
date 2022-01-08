@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-width: 90px;
+    --cell-height: 90px
+}
+
+
+.game-container {
+    width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.game-container_panel {
+    width: 800px;
+    height: 30vh;
+}
+
+.panel-timer {
+    width: 800px;
+    height: 18vh;
+    font-size: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-buttons {
+    width: 800px;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 120px;
+    padding: 8px;
+    margin: 0 16px 0;
+    color: #fff;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0d99ac;
+}
+
+.game-container_displays {
+    width: 800px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.displays-puzzle,
+.displays-solution {
+    width: 360px;
+    height: 360px;
+    border: 1px solid black;
+}
+
+.displays-puzzle,
+.displays-solution {
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px 90px;
+    gap: 0px 0px;
+    grid-template-areas: 
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+.displays-puzzle {
+    margin-right: 40px;
+    position: relative;
+}
+
+
+.modal-window {
+    background-color: #fff;
+    position: absolute;
+    width: 600px;
+    height: 25vh;
+    margin: 0 auto;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 4;
+}
+
+.modal-window_messages {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.modal-window_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window_buttons .btn:nth-of-type(2) {
+    background-color: #008000;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccccccc5;
+    z-index: 3;
+}
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+.displays-puzzle_item {
+    width: var(--cell-width);
+    height: var(--cell-height);
+}
+
+.displays-puzzle_item[data-idx="1"] {
+    background-image: url('img/image.jpeg');
+    background-position: 0% 0%;
+}
+
+.displays-puzzle_item[data-idx="2"] {
+    background-image: url('img/image.jpeg');
+    background-position: 33% 0%;
+}
+
+.displays-puzzle_item[data-idx="3"] {
+    background-image: url('img/image.jpeg');
+    background-position: 66% 0%;
+}
+
+.displays-puzzle_item[data-idx="4"] {
+    background-image: url('img/image.jpeg');
+    background-position: 99% 0%;
+}
+
+.displays-puzzle_item[data-idx="5"] {
+    background-image: url('img/image.jpeg');
+    background-position: 0% 33%;
+}
+
+.displays-puzzle_item[data-idx="6"] {
+    background-image: url('img/image.jpeg');
+    background-position: 33% 33%;
+}
+
+.displays-puzzle_item[data-idx="7"] {
+    background-image: url('img/image.jpeg');
+    background-position: 66% 33%;
+}
+
+.displays-puzzle_item[data-idx="8"] {
+    background-image: url('img/image.jpeg');
+    background-position: 99% 33%;
+}
+
+.displays-puzzle_item[data-idx="9"] {
+    background-image: url('img/image.jpeg');
+    background-position: 0% 66%;
+}
+
+.displays-puzzle_item[data-idx="10"] {
+    background-image: url('img/image.jpeg');
+    background-position: 33% 66%;
+}
+
+.displays-puzzle_item[data-idx="11"] {
+    background-image: url('img/image.jpeg');
+    background-position: 66% 66%;
+}
+
+.displays-puzzle_item[data-idx="12"] {
+    background-image: url('img/image.jpeg');
+    background-position: 99% 66%;
+}
+
+.displays-puzzle_item[data-idx="13"] {
+    background-image: url('img/image.jpeg');
+    background-position: 0% 99%;
+}
+
+.displays-puzzle_item[data-idx="14"] {
+    background-image: url('img/image.jpeg');
+    background-position: 33% 99%;
+}
+
+.displays-puzzle_item[data-idx="15"] {
+    background-image: url('img/image.jpeg');
+    background-position: 66% 99%;
+}
+
+.displays-puzzle_item[data-idx="16"] {
+    background-image: url('img/image.jpeg');
+    background-position: 99% 99%;
+}
